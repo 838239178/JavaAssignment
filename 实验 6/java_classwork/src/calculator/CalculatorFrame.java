@@ -153,6 +153,6 @@ public class CalculatorFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        new CalculatorFrame();
+        EventQueue.invokeLater(()-> new CalculatorFrame());
     }
 }

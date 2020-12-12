@@ -97,26 +97,28 @@ public class DrawPicture extends JComponent {
 
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame();
-        DrawPicture drawPicture = new DrawPicture();
-        JButton colorChooser = new JButton("选择画笔颜色");
+        EventQueue.invokeLater(()->{
+            JFrame frame = new JFrame();
+            DrawPicture drawPicture = new DrawPicture();
+            JButton colorChooser = new JButton("选择画笔颜色");
 
-        frame.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                super.windowClosing(e);
-                drawPicture.savePoints("data//points.txt");
-            }
+            frame.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    super.windowClosing(e);
+                    drawPicture.savePoints("data//points.txt");
+                }
+            });
+
+            colorChooser.addActionListener(e -> drawPicture.setColor(JColorChooser.showDialog(frame, "画笔颜色", Color.black)));
+
+            frame.add(BorderLayout.SOUTH, colorChooser);
+
+            frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+            frame.add(BorderLayout.CENTER, drawPicture);
+            frame.setSize(400, 400);
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
         });
-
-        colorChooser.addActionListener(e -> drawPicture.setColor(JColorChooser.showDialog(frame, "画笔颜色", Color.black)));
-
-        frame.add(BorderLayout.SOUTH, colorChooser);
-
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.add(BorderLayout.CENTER, drawPicture);
-        frame.setSize(400, 400);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
     }
 }

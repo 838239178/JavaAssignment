@@ -4,7 +4,6 @@ import javafx.geometry.Point2D;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.InputEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -22,6 +21,7 @@ public class DrawLineComponent extends JComponent {
         private Point prePos;
         private Point2D[] current;
         private int draggedPointIndex;
+        private int buttonId = 0;
 
         public MouseListenerInner() {
             current = null;
@@ -33,11 +33,11 @@ public class DrawLineComponent extends JComponent {
         public void mouseDragged(MouseEvent e) {
             if (current == null) return;
 
-            if (e.getModifiers() == InputEvent.BUTTON3_MASK) {
+            if (buttonId == 3) {
                 int offset = (int) (e.getX() - prePos.getX());
                 addOffsetX(current, offset);
                 prePos = e.getPoint();
-            } else if (e.getModifiers() == InputEvent.BUTTON1_MASK) {
+            } else if (buttonId == 1) {
                 if (draggedPointIndex != -1) {
                     current[draggedPointIndex] = new Point2D(e.getX(), e.getY());
                     //TODO：改变拖拽点周围的点使曲线的点分布均匀
@@ -51,6 +51,8 @@ public class DrawLineComponent extends JComponent {
             AtomicReference<Integer> index = new AtomicReference<>(-1);
             Point2D mouse = new Point2D(e.getX(), e.getY());
             prePos.setLocation(mouse.getX(), mouse.getY());
+
+            buttonId = e.getButton();
 
             //线性查找匹配的点----误差距离为5以内
             lines.forEach(points -> {
@@ -71,6 +73,7 @@ public class DrawLineComponent extends JComponent {
         public void mouseReleased(MouseEvent e) {
             draggedPointIndex = -1;
             current = null;
+            buttonId = 0;
         }
     }
 
