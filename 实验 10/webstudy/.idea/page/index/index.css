@@ -1,0 +1,79 @@
+.title-div{
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+}
+
+.title-div img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#snow-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.clock{
+    border: 5px solid #ffcd32;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: default;
+    position: absolute;
+    top: 236px;
+    right: 5vw;
+    user-select: none;
+}
+
+.top-tap{
+    position: fixed;
+    bottom: 2vh;
+    right: 10px;
+}
+
+.top-tap button:hover{
+    cursor: pointer;
+    filter: brightness(105%);
+    padding-bottom: 10px;
+}
+
+.line-img-div{
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px #888888;
+}
+.line-img-div img{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+}
+
+.passage-container{
+    width: 50vw;
+    background: white;
+    margin: 10vh auto;
+    padding: 3em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.passage-container>p{
+    font-family: "宋体";
+    font-size: 18px;
+    font-weight: 400;
+    text-indent: 2em;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+}

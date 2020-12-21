@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>my first html</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <script>
+            window.onload = function () {
+                var clock = document.getElementsByClassName("clock")[0];
+                var clockHeight = clock.offsetTop;
+                window.onscroll = function () {
+                    fixedDom(clock, clockHeight, 0);
+                }
+            }
+        </script>
+        <canvas id="snow-canvas"></canvas>
+        <div class="title-div">
+            <p>Hello HTML</p>
+            <img src="http://s2.hdslb.com/bfs/static/blive/blfe-dynamic-web/static/img/background.bc725153.png"/>
+        </div>
+        <div class="line-img-div">
+            <img style="width: 100%"
+                 src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/img/webp/nothome_top_bg.webp"/>
+        </div>
+        <div class="passage-container">
+            <h1 style="margin-bottom: 2em">
+                <center>人民日报节选</center>
+            </h1>
+            <script>createPassage()</script>
+        </div>
+        <div class="clock">
+            <div id="clock">local time</div>
+            <div><center><button onclick="drawSnowCanvas()"><b>开关雪花特效</b></button></center></div>
+            <script>startClock()</script>
+        </div>
+        <div class="top-tap">
+        <button onclick="jumpToTop(this)" style="border: none; background: rgba(255,255,255,0); outline: none;">
+            <img src="http://s2.hdslb.com/bfs/static/blive/blfe-dynamic-web/static/img/rocket_top.bcc748c3.png"/>
+        </button>
+    </div>
+    </body>
+</html>
