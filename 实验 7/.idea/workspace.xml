@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0969f49-ea04-4c7a-98af-f207341998f9" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/../实验 9/java_classwork/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../实验 9/java_classwork/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../实验 9/java_classwork/out/production/java_classwork/META-INF/java_classwork.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../实验 9/java_classwork/out/production/java_classwork/deadlock/Philosopher.class" beforeDir="false" afterPath="$PROJECT_DIR$/../实验 9/java_classwork/out/production/java_classwork/deadlock/Philosopher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../实验 9/java_classwork/out/production/java_classwork/sum/SumWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../实验 9/java_classwork/out/production/java_classwork/sum/SumWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../实验 9/java_classwork/out/production/java_classwork/sum/TestSumWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../实验 9/java_classwork/out/production/java_classwork/sum/TestSumWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../实验 9/java_classwork/src/sum/SumWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../实验 9/java_classwork/src/sum/SumWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../实验 9/java_classwork/src/sum/TestSumWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../实验 9/java_classwork/src/sum/TestSumWorker.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="已捆绑(Maven 3)" />
+        <option name="userSettingsFile" value="D:\IntelliJ IDEA 2020.1.3\plugins\maven\lib\maven3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mQDwHLuBxqBux6fuRQWFFPvVPP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../实验 8/java_classwork" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0969f49-ea04-4c7a-98af-f207341998f9" name="默认的" comment="" />
+      <created>1609417157531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609417157531</updated>
+      <workItem from="1609417158741" duration="55000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="758" y="367" key="FileChooserDialogImpl" timestamp="1609417212635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="758" y="367" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609417212635" />
+  </component>
+</project>

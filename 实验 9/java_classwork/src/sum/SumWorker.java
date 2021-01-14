@@ -2,24 +2,23 @@ package sum;
 
 import java.util.concurrent.Callable;
 
-public class SumWorker implements Runnable {
+public class SumWorker implements Callable<Long> {
     //[m,n)
     private final int m;
     private final int n;
     private final Result sum;
 
-    SumWorker(int m, int n, Result sum) {
+    SumWorker(int m, int n) {
         this.m = m;
         this.n = n;
-        this.sum = sum;
+        this.sum = new Result();
     }
 
     @Override
-    public void run() {
-        for(int i = m; i < n; i++){
-            synchronized (sum){
-                sum.add(i);
-            }
+    public Long call() {
+        for (int i = m; i < n; i++) {
+            sum.add(i);
         }
+        return sum.getSum();
     }
 }
